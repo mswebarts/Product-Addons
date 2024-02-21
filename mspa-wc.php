@@ -50,6 +50,16 @@ function mspa_woocommerce_dependency_error() {
 
 add_action("wp_enqueue_scripts", "mspa_register_styles");
 function mspa_register_styles() {
+    // register and enqueue css
+    wp_register_style("mspa-style", plugins_url("assets/css/style.css", __FILE__));
+    wp_register_style("mspa-responsive", plugins_url("assets/css/responsive.css", __FILE__));
+
+    wp_enqueue_style("mspa-style");
+    wp_enqueue_style("mspa-responsive");
+}
+
+add_action("wp_enqueue_scripts", "mspa_register_scripts");
+function mspa_register_scripts() {
     // register and enqueue javascript
     wp_register_script('mspa-script', plugins_url('assets/js/main.js', __FILE__), array('jquery'), '1.0.0', true);
     wp_enqueue_script('mspa-script');
@@ -61,19 +71,6 @@ function mspa_register_styles() {
         'ajaxurl' => admin_url('admin-ajax.php'),
         'product_id' => $product_id
     ));
-
-    // register and enqueue css
-    wp_register_style("mspa-style", plugins_url("assets/css/style.css", __FILE__));
-    wp_register_style("mspa-responsive", plugins_url("assets/css/responsive.css", __FILE__));
-    // wp_register_style("mspa-inline", plugins_url("assets/css/inline.css", __FILE__));
-
-    wp_enqueue_style("mspa-style");
-    wp_enqueue_style("mspa-responsive");
-
-    // wp_enqueue_style("mspa-inline");
-
-    // $custom_css = "";
-    // wp_add_inline_style('mspa-inline', $custom_css);
 }
 
 // add_menu_page
