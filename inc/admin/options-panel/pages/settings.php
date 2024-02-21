@@ -74,7 +74,7 @@ $add_review_check   = $mspa_enable_product_addon == '1' ? 'checked' : '';
                                                             <?php echo esc_html($section['product_addon_section_name']); ?>
                                                             <span class="dashicons dashicons-arrow-down-alt2 toggle-icon"></span>
                                                         </h3>
-                                                        <div class='mspa-accordion-content'>
+                                                        <div class='mspa-accordion-content mspa-accordion-closed'>
                                                             <div data-repeater-item>
                                                                 <div class="mspa-repeater-field-item-container">
                                                                     <label for="product_addon_section_id">
