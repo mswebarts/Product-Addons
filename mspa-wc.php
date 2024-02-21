@@ -64,13 +64,15 @@ function mspa_register_scripts() {
     wp_register_script('mspa-script', plugins_url('assets/js/main.js', __FILE__), array('jquery'), '1.0.0', true);
     wp_enqueue_script('mspa-script');
 
-    global $product;
-    $product_id = method_exists( $product, 'get_id' ) ? $product->get_id() : $product->id;
-    
-    wp_localize_script('mspa-script', 'mspa_script_vars', array(
-        'ajaxurl' => admin_url('admin-ajax.php'),
-        'product_id' => $product_id
-    ));
+    if (is_product()) {
+        global $product;
+        $product_id = get_queried_object_id();
+        
+        wp_localize_script('mspa-script', 'mspa_script_vars', array(
+            'ajaxurl' => admin_url('admin-ajax.php'),
+            'product_id' => $product_id
+        ));
+    }
 }
 
 // add_menu_page
