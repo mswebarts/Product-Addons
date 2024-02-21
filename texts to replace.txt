@@ -1,0 +1,5 @@
+textdomain: msp-addons
+function prefix: mspa
+class and define: MSProductAddons
+
+rename directory: inc/classes/class-mspa-template-loader.php
