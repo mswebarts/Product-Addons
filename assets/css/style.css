@@ -13,3 +13,6 @@
 .mspa-product-addons table tr td:nth-child(2) {
     text-align: right;
 }
+.mspa-section-required {
+    color: #ff0000;
+}
