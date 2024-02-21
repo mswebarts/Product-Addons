@@ -90,6 +90,15 @@ function mspa_add_selected_addons_to_cart_item_data($cart_item_data, $product_id
     return $cart_item_data;
 }
 
+// Add the selected addons to the order item meta
+add_action('woocommerce_checkout_create_order_line_item', 'mspa_add_selected_addons_to_order_item_meta', 10, 4);
+function mspa_add_selected_addons_to_order_item_meta($item, $cart_item_key, $values, $order) {
+    if (!empty($values['addons'])) {
+        $item->add_meta_data('addons', $values['addons']);
+    }
+}
+
+// Display the selected addons in the cart
 add_filter('woocommerce_get_item_data', 'mspa_display_selected_addons_in_cart', 10, 2);
 function mspa_display_selected_addons_in_cart($item_data, $cart_item) {
     if (!empty($cart_item['addons'])) {
@@ -110,6 +119,23 @@ function mspa_display_selected_addons_in_cart($item_data, $cart_item) {
     }
 
     return $item_data;
+}
+
+// display the selected addons in the order details
+add_action('woocommerce_order_item_meta_end', 'mspa_display_selected_addons_in_order', 10, 3);
+function mspa_display_selected_addons_in_order($item_id, $item, $order) {
+    if (!empty($item['addons'])) {
+        // Group the addons by their section
+        $addons_by_section = array();
+        foreach ($item['addons'] as $addon) {
+            $addons_by_section[sanitize_text_field($addon['section'])][] = wc_clean($addon['name']);
+        }
+
+        // Add the addons to the order item meta
+        foreach ($addons_by_section as $section => $addons) {
+            echo '<div><strong>' . sanitize_text_field($section) . ':</strong> ' . implode(', ', $addons) . '</div>';
+        }
+    }
 }
 
 // Add the selected addons to the cart item price
