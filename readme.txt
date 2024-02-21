@@ -12,7 +12,7 @@ Let customers choose product addons while buying for WooCommerce websites.
 
 == Description ==
 
-
+Let customers choose product addons while buying for WooCommerce websites.
 
 == Installation ==
 
@@ -26,9 +26,9 @@ This section describes how to install the plugin and get it working.
 4. Upload the downloaded plugin zip file
 5. Then activate it.
 
-Once the plugin is activated, go to MS Web Arts -> Breview from the admin menu. You can control all the settings of the plugin from this page.
+Once the plugin is activated, go to MS Web Arts -> Product Addons from the admin menu. You can control all the settings of the plugin from this page.
 
-Pro Tip: If you see any PHP warning in your site's frontend, just go to MS Web Arts -> Breview and click on the Save Settings button.
+Pro Tip: If you see any PHP warning in your site's frontend, just go to MS Web Arts -> Product Addons and click on the Save Settings button.
 
 **Method Two**
 
@@ -36,7 +36,7 @@ Pro Tip: If you see any PHP warning in your site's frontend, just go to MS Web A
 2. Connect to your hosting with an FTP account or File Manager in your Hosting account
 3. Go to the WordPress installation directory -> wp-content -> plugins
 4. Upload the downloaded plugin's uncompressed folder ( if using FTP ) or zip file ( if Hosting cPanel ). You must extract the file from hosting cPanel if you upload zip file
-5. Then go to WordPress admin dashboard -> Plugins -> Installed Plugins -> Then activate Breview
+5. Then go to WordPress admin dashboard -> Plugins -> Installed Plugins -> Then activate Product Addons
 
 Hope the installation process was as smooth as the plugin works!
 
@@ -45,7 +45,7 @@ Hope the installation process was as smooth as the plugin works!
 
 = How to remove PHP warnings in the review tab? =
 
-The review tab may display a warning after you activate the plugin and the license. You just need to go to your WordPress site’s admin panel -> MS Web Arts -> Breview and then just click on the Save Settings button. This will save the settings in the database and the warnings will go away.
+The review tab may display a warning after you activate the plugin and the license. You just need to go to your WordPress site’s admin panel -> MS Web Arts -> Product Addons and then just click on the Save Settings button. This will save the settings in the database and the warnings will go away.
 
 = How can I update the plugin? =
 
@@ -59,7 +59,7 @@ If you have purchased the pro version, you will not need to use the free version
 
 1. Add review in order page
 2. Add review popup in order page
-3. Breview Settings page
+3. Product Addons Settings page
 4. Review header designs ( Pro )
 5. Review list designs ( Pro )
 6. Multi-criteria ratings ( Pro )
