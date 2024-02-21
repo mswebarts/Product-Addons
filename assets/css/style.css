@@ -5,6 +5,11 @@
 .mspa-product-addons table tr {
     width: 100%;
 }
+.mspa-product-addons td,
+.mspa-product-addons table,
+.mspa-product-addons table tr {
+    border: none;
+}
 .mspa-product-addons table tr td:nth-child(2) {
     text-align: right;
 }
