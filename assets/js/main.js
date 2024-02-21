@@ -83,4 +83,11 @@
 			e.preventDefault(); // Prevent form submission
 		}
 	});
+
+	// make accordion sections collapsible
+	$(".mspa-product-addons-title").click(function () {
+		$(this).next(".mspa-product-addons-content").slideToggle();
+		// update the toggle icon
+		$(this).find(".toggle-icon").toggleClass("dashicons-arrow-up-alt2 dashicons-arrow-down-alt2");
+	});
 })(jQuery);
