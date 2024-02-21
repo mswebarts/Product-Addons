@@ -282,6 +282,19 @@
 	height: 20px;
 }
 
+/* plugin specific */
+div#product_addon_sections_product_data {
+    padding: 20px;
+}
+div#product_addon_sections_product_data .mspa-accordion-title {
+    padding: 10px;
+    margin: 0 0 15px;
+	cursor: pointer;
+}
+div#product_addon_sections_product_data .mspa-accordion-content {
+    margin-bottom: 30px;
+}
+
 @media all and (max-width: 768px) {
 	.mswa-col-2,
 	.mswa-col-3,
