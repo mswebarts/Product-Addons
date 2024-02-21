@@ -1,10 +1,35 @@
 .mspa-product-addons {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .mspa-product-addons table,
 .mspa-product-addons table tr {
-    width: 100%;
+	width: 100%;
+}
+.mspa-product-addons td,
+.mspa-product-addons table,
+.mspa-product-addons table tr {
+	border: none;
 }
 .mspa-product-addons table tr td:nth-child(2) {
-    text-align: right;
+	text-align: right;
+}
+.mspa-product-addons .mspa-section-required {
+	color: #ff0000;
+}
+.mspa-product-addons .mspa-product-addons-title {
+	position: relative;
+	background-color: #121a3f;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #f5f5f5;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.mspa-product-addons-title .toggle-icon {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	line-height: 100%;
+	transform: translateY(-50%);
 }

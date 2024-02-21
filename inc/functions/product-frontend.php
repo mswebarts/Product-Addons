@@ -10,6 +10,8 @@ function mspa_display_product_addon_sections() {
     $mspa_options = get_option('mspa_general_options');
     if (!empty($mspa_options['product_addon_sections'])) {
         $product_addon_sections = $mspa_options['product_addon_sections'];
+        // create an empty array to store the section data for the js file
+        $localized_data = array();
 
         foreach ($product_addon_sections as $section) {
             $addon_items = get_post_meta($product_id, '_mspa_section_' . sanitize_text_field($section['product_addon_section_id']) . '_items', true);
@@ -26,34 +28,47 @@ function mspa_display_product_addon_sections() {
                     }
                 }
                 if ($display_section) {
+                    // get the section data to be sent to the js file
+                    $localized_data[] = array(
+                        'id' => esc_js($section['product_addon_section_id']),
+                        'name' => esc_js($section['product_addon_section_name']),
+                    );
+
                     ?>
-                    <div class="mspa-product-addons" data-base-price="<?php echo esc_attr($base_price); ?>">
-                        <h3><?php echo esc_html($section['product_addon_section_name']); ?></h3>
-                        <table>
-                            <tbody>
-                                <?php
-                                foreach ($addon_items as $item) {
-                                    if (!empty($item['name']) && !empty($item['price'])) {
-                                        ?>
-                                        <tr>
-                                            <td>
-                                                <input type="checkbox" class="addon-checkbox" data-section="<?php echo esc_attr($section['product_addon_section_name']); ?>" data-price="<?php echo esc_attr($item['price']); ?>" name="addon-<?php echo sanitize_title($item['name']); ?>">
-                                                <?php echo esc_html($item['name']); ?>
-                                            </td>
-                                            <td><?php echo wc_price($item['price']); ?></td>
-                                        </tr>
-                                        <?php
+                    <div class="mspa-product-addons section-<?php echo esc_attr($section['product_addon_section_id']); ?>" data-base-price="<?php echo esc_attr($base_price); ?>">
+                        <h3 class="mspa-product-addons-title">
+                            <?php echo esc_html($section['product_addon_section_name']); ?>
+                            <span class="dashicons dashicons-arrow-up-alt2 toggle-icon"></span>
+                        </h3>
+                        <div class="mspa-product-addons-content">
+                            <div class="mspa-section-required"><?php echo esc_html_e("Please choose at least 1 option"); ?></div>
+                            <table>
+                                <tbody>
+                                    <?php
+                                    foreach ($addon_items as $item) {
+                                        if (!empty($item['name']) && !empty($item['price'])) {
+                                            ?>
+                                            <tr>
+                                                <td>
+                                                    <input type="checkbox" class="addon-checkbox" data-section="<?php echo esc_attr($section['product_addon_section_name']); ?>" data-price="<?php echo esc_attr($item['price']); ?>" name="addon-<?php echo sanitize_title($item['name']); ?>">
+                                                    <?php echo esc_html($item['name']); ?>
+                                                </td>
+                                                <td><?php echo wc_price($item['price']); ?></td>
+                                            </tr>
+                                            <?php
+                                        }
                                     }
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <?php
                 }
             }
         }
-
+        // send the section data to the js file
+        wp_localize_script('mspa-script', 'mspaSections', $localized_data);
     }
 
     echo '<input type="hidden" id="selected_addons" name="selected_addons" value="">';
