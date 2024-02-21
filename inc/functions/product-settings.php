@@ -39,8 +39,11 @@ function mspa_product_addon_sections_product_data_content() {
                         ];
                     }
                     ?>
-                    <div class='accordion-title'><?php echo esc_html($section['product_addon_section_name']); ?></div>
-                    <div class='accordion-content'>
+                    <h3 class='mspa-accordion-title'>
+                        <?php echo esc_html($section['product_addon_section_name']); ?>
+                        <span class="dashicons dashicons-arrow-down-alt2 toggle-icon"></span>
+                    </h3>
+                    <div class='mspa-accordion-content'>
                         <div class="mspa-repeater">
                             <div data-repeater-list="<?php echo esc_attr('mspa-section-'. $section['product_addon_section_id'] . '-fields') ?>">
                                 <?php
@@ -99,18 +102,4 @@ function mspa_save_product_addon_sections_product_data($post_id) {
             }
         }
     }
-}
-
-// Add the necessary JavaScript to make the sections collapsible
-add_action('admin_footer', 'mspa_product_addon_sections_accordion_js');
-function mspa_product_addon_sections_accordion_js() {
-    ?>
-    <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $('.accordion-title').click(function() {
-            $(this).next('.accordion-content').slideToggle();
-        });
-    });
-    </script>
-    <?php
 }
