@@ -70,6 +70,11 @@ $add_review_check   = $mspa_enable_product_addon == '1' ? 'checked' : '';
                                                     if ($total_sections > 0) {
                                                         foreach ($product_addon_sections as $section) {
                                                     ?>
+                                                        <h3 class='mspa-accordion-title'>
+                                                            <?php echo esc_html($section['product_addon_section_name']); ?>
+                                                            <span class="dashicons dashicons-arrow-down-alt2 toggle-icon"></span>
+                                                        </h3>
+                                                        <div class='mspa-accordion-content'>
                                                             <div data-repeater-item>
                                                                 <div class="mspa-repeater-field-item-container">
                                                                     <label for="product_addon_section_id">
@@ -97,6 +102,7 @@ $add_review_check   = $mspa_enable_product_addon == '1' ? 'checked' : '';
 
                                                                 <input data-repeater-delete type="button" value="Delete" />
                                                             </div>
+                                                        </div>
                                                     <?php
                                                         }
                                                     } else {
