@@ -1,0 +1,10 @@
+.mspa-product-addons {
+    margin-bottom: 30px;
+}
+.mspa-product-addons table,
+.mspa-product-addons table tr {
+    width: 100%;
+}
+.mspa-product-addons table tr td:nth-child(2) {
+    text-align: right;
+}
