@@ -294,6 +294,25 @@ div#product_addon_sections_product_data .mspa-accordion-title {
 div#product_addon_sections_product_data .mspa-accordion-content {
     margin-bottom: 30px;
 }
+.mspa-accordion-title {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #333333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 500px;
+	position: relative;
+}
+.mspa-accordion-title .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.mspa-accordion-content.mspa-accordion-closed {
+    display: none;
+}
 
 @media all and (max-width: 768px) {
 	.mswa-col-2,
