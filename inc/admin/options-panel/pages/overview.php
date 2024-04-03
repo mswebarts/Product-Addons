@@ -3,9 +3,9 @@ global $mspa_url;
 ?>
 <h1 class="mspa-admin-options-page-title">
     <img src="<?php echo esc_url($mspa_url . 'inc/admin/assets/images/logo.png'); ?>" alt="">
-    <span><?php echo esc_html_e('MS Web Arts Overview', 'breview'); ?></span>
+    <span><?php echo esc_html_e('MS Web Arts Overview', 'msp-addons'); ?></span>
 </h1>
-<p><?php echo esc_html_e('This page contains the license activations for plugins provided by MS Web Arts and latest news/updates from us', 'breview'); ?></p>
+<p><?php echo esc_html_e('This page contains the license activations for plugins provided by MS Web Arts and latest news/updates from us', 'msp-addons'); ?></p>
 
 <div class="wrap mswa-settings-page">
 
