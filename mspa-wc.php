@@ -81,8 +81,8 @@ class MSP_Addons_Lite {
 
 	public function mspa_register_styles() {
 		// register and enqueue css.
-		wp_register_style( 'mspa-style', plugins_url( 'assets/css/style.css', __FILE__ ) );
-		wp_register_style( 'mspa-responsive', plugins_url( 'assets/css/responsive.css', __FILE__ ) );
+		wp_register_style( 'mspa-style', plugins_url( 'assets/css/style.css', __FILE__ ), array(), '1.0.0', 'all' );
+		wp_register_style( 'mspa-responsive', plugins_url( 'assets/css/responsive.css', __FILE__ ), array(), '1.0.0', 'all' );
 
 		wp_enqueue_style( 'mspa-style' );
 		wp_enqueue_style( 'mspa-responsive' );
@@ -147,10 +147,10 @@ class MSP_Addons_Lite {
 
 	// add admin styles and js.
 	public function mspa_admin_styles() {
-		wp_register_style( 'mswa-global-style', 'https://mswebarts.b-cdn.net/plugins-global/global.css' );
+		wp_register_style( 'mswa-global-style', 'https://mswebarts.b-cdn.net/plugins-global/global.css', array(), '1.0.0', 'all' );
 		wp_enqueue_style( 'mswa-global-style' );
 
-		wp_register_style( 'mspa-admin-style', plugins_url( 'inc/admin/assets/css/style.css', __FILE__ ) );
+		wp_register_style( 'mspa-admin-style', plugins_url( 'inc/admin/assets/css/style.css', __FILE__ ), array(), '1.0.0', 'all'  );
 		wp_enqueue_style( 'mspa-admin-style' );
 	}
 
