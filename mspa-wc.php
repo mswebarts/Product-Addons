@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: MS Product Addons
+ * Plugin Name: Simple Product Addons for WooCommerce
  * Description: Let customers choose product addons while buying for WooCommerce websites.
  * Version: 1.
  * Plugin URI: https://www.mswebarts.com/products/msp-addons/
@@ -24,6 +24,29 @@ global $mspa_dir, $mspa_url, $mspa_options;
 $mspa_dir     = plugin_dir_path( __FILE__ );
 $mspa_url     = plugins_url( '/', __FILE__ );
 $mspa_options = array();
+
+// include composer autoload.
+require $mspa_dir . '/vendor/autoload.php';
+
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_simple_product_addons() {
+
+    if ( ! class_exists( 'Appsero\Client' ) ) {
+      require_once __DIR__ . '/appsero/src/Client.php';
+    }
+
+    $client = new Appsero\Client( 'd29de200-c235-44af-9464-b98213ca8c29', 'Simple Product Addons for WooCommerce', __FILE__ );
+
+    // Active insights
+    $client->insights()->init();
+
+}
+
+appsero_init_tracker_simple_product_addons();
 
 class MSP_Addons_Lite {
 	public function __construct() {

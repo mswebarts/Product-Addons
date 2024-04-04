@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c
+class MSPAddonsComposerStaticInit
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
             'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 57,
+        ),
+        'A' => 
+        array (
+            'Appsero\\' => 8,
         ),
     );
 
@@ -17,6 +21,10 @@ class ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c
         'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
+        ),
+        'Appsero\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/appsero/client/src',
         ),
     );
 
@@ -64,9 +72,9 @@ class ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitbeb1c8199f3993f54b5eb20948bd745c::$classMap;
+            $loader->prefixLengthsPsr4 = MSPAddonsComposerStaticInit::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = MSPAddonsComposerStaticInit::$prefixDirsPsr4;
+            $loader->classMap = MSPAddonsComposerStaticInit::$classMap;
 
         }, null, ClassLoader::class);
     }

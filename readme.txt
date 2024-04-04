@@ -1,4 +1,4 @@
-=== MS Product Addons ===
+=== Simple Product Addons for WooCommerce ===
 Contributors: mswebarts, msshohan
 Tags:  woocommerce, product addon, extra fields
 Requires at least: 5.5
