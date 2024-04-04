@@ -1,6 +1,6 @@
 <?php
 $general_tab      = menu_page_url( 'msp-addons', false );
-$add_review_check = $mspa_enable_product_addon == '1' ? 'checked' : '';
+$add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 ?>
 <div id="icon-options-general" class="icon32"></div>
 <h1><?php echo esc_html_e( 'MS Product Addons for WC', 'msp-addons' ); ?></h1>
@@ -124,7 +124,8 @@ $add_review_check = $mspa_enable_product_addon == '1' ? 'checked' : '';
 								</table>
 							</div>
 						</div>
-
+						
+						<?php wp_nonce_field( 'mspa_general_form_action', 'mspa_general_form_nonce' ); ?>
 						<input class="button-primary" type="submit" value="<?php esc_html_e( 'Save Settings', 'msp-addons' ); ?>" />
 
 						<br class="clear" />
