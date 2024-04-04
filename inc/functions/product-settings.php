@@ -39,12 +39,12 @@ function mspa_product_addon_sections_product_data_content() {
                         ];
                     }
                     ?>
-                    <h3 class='mspa-accordion-title'>
+                    <h3 class='mswa-accordion-title'>
                         <?php echo esc_html($section['product_addon_section_name']); ?>
                         <span class="dashicons dashicons-arrow-down-alt2 toggle-icon"></span>
                     </h3>
-                    <div class='mspa-accordion-content'>
-                        <div class="mspa-repeater">
+                    <div class='mswa-accordion-content'>
+                        <div class="mswa-repeater">
                             <div data-repeater-list="<?php echo esc_attr('mspa-section-'. $section['product_addon_section_id'] . '-fields') ?>">
                                 <?php
                                 if (!empty($addon_items)) {

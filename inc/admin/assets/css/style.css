@@ -1,264 +1,5 @@
-/*==============================
-			Admin Panel
-==============================*/
-.mswa-row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
-}
-.mswa-col-2 {
-	width: calc(50% - 10px);
-	margin-bottom: 10px;
-}
-.mswa-col-3 {
-	width: calc(33.33% - 10px);
-	margin-bottom: 10px;
-}
-.mswa-col-4 {
-	width: calc(25% - 10px);
-	margin-bottom: 10px;
-}
-.mswa-col-5 {
-	width: calc(20% - 10px);
-	margin-bottom: 10px;
-}
-.mswa-row [class*="mswa-col-"] {
-	background: #fff;
-	border-radius: 5px;
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin: 5px;
-}
-.mswa-box {
-	padding: 20px;
-}
-
-.mswa-settings-page #post-body-content .nav-tab-wrapper {
-	padding-bottom: 0;
-	margin-bottom: 10px;
-}
-.mswa-settings-page .inside {
-	margin-top: 0;
-}
-
-.mspa-admin-options-page-title {
-	font-size: 26px;
-	line-height: 30px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-.mspa-admin-options-page-title img,
-.mspa-admin-options-page-title i {
-	margin-right: 5px;
-}
-
-.mswa-form-wrapper form {
-	width: 100%;
-}
-.mswa-section-wrapper .mswa-section {
-	background-color: #ffffff;
-	border: 1px solid #cdcdcd;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	padding: 10px 20px;
-}
-.mswa-section .mswa-section-heading h2 {
-	font-size: 16px !important;
-	line-height: 20px !important;
-	font-weight: 600;
-	padding: 0 !important;
-}
-/* radio buttons field */
-.mswa-radio-groups .mswa-radio-group {
-	position: relative;
-	display: inline-block;
-}
-.mswa-radio-groups input[type="radio"] {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	z-index: 1;
-}
-.mswa-radio-groups label {
-	position: relative;
-	color: #3a56a6;
-	font-size: 16px;
-	line-height: 16px;
-	font-weight: 400;
-	border: 2px solid #3a56a6;
-	border-radius: 5px;
-	padding: 6px 20px 6px 30px;
-	z-index: 0;
-}
-.mswa-radio-groups label:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 5px;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	border: 2px solid #3a56a6;
-}
-.mswa-radio-groups input[type="radio"]:checked + label {
-	color: #fff;
-	background-color: #3a56a6;
-}
-.mswa-radio-groups input[type="radio"]:checked + label:before {
-	width: 12px;
-	height: 12px;
-	border: 5px solid #ffffff;
-	background-color: #3a56a6;
-}
-/*==============================
-			Repeater
-================================*/
-.mspa-repeater [data-repeater-item] {
-	margin-bottom: 20px;
-	display: block;
-	max-width: 500px;
-	background-color: #d9d9d9;
-	padding: 15px 15px 10px 15px;
-	border-radius: 5px;
-}
-.mspa-repeater .mspa-repeater-field-item-container {
-	margin-bottom: 10px;
-}
-.mspa-repeater [data-repeater-item] input {
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 6px;
-}
-.mspa-repeater [data-repeater-item] [data-repeater-delete] {
-	width: auto;
-	background-color: rgb(255, 0, 0);
-	border: none;
-	border-radius: 5px;
-	padding: 6px 16px;
-	color: #f5f5f5;
-	cursor: pointer;
-}
-.mspa-repeater [data-repeater-create] {
-	width: auto;
-	background-color: rgb(11, 126, 11);
-	border: none;
-	border-radius: 5px;
-	padding: 6px 16px;
-	color: #f5f5f5;
-	cursor: pointer;
-}
-.mspa-repeater [data-repeater-item] .mspa-label-heading {
-	margin: 0;
-}
-
-/*===============================
-			License Page
-================================*/
-.mspa-license-container .mspa-license-field {
-	display: block;
-	margin-bottom: 15px;
-}
-.mspa-license-container .mspa-license-field input {
-	font-size: 16px;
-	padding: 8px 10px 10px;
-	min-height: unset;
-	line-height: 18px;
-}
-.mspa-license-container .notice-error,
-.mspa-license-container div.error {
-	background: rgba(220, 50, 50, 0.11);
-	margin: 0;
-}
-.mspa-license-container .mspa-license-title,
-.mspa-column-title {
-	font-size: 18px;
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-.mspa-license-container .mspa-license-info li {
-	list-style: none;
-	padding: 0;
-}
-.mspa-license-container .mspa-license-info-title {
-	width: 150px;
-	display: inline-block;
-	position: relative;
-	padding-right: 5px;
-}
-.mspa-license-container .mspa-license-info-title:after {
-	content: ":";
-	position: absolute;
-	right: 2px;
-}
-.mspa-license-container .mspa-license-valid,
-.mspa-license-container .mspa-license-invalid {
-	padding: 0px 5px 2px;
-	color: #fff;
-	background-color: #8fcc77;
-	border-radius: 3px;
-}
-.mspa-license-container .mspa-license-invalid {
-	background-color: #f44336;
-}
-.mspa-license-container .mspa-license-key {
-	font-weight: 700;
-	opacity: 0.8;
-}
-.mspa-license-container .el-green-btn {
-	padding: 0px 5px 2px;
-	color: #fff;
-	background-color: #8fcc77;
-	border-radius: 3px;
-	text-decoration: none;
-	-webkit-box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.38);
-	box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.38);
-}
-.mspa-license-container .el-green-btn:hover {
-	color: #fff;
-	background-color: #84bc6c;
-}
-.mspa-license-container .el-blue-btn {
-	padding: 0px 5px 2px;
-	color: #fff;
-	background-color: #20b1d2;
-	border-radius: 3px;
-	text-decoration: none;
-	-webkit-box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.38);
-	box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.38);
-}
-.mspa-license-container .el-blue-btn:hover {
-	color: #fff;
-	background-color: #219dbf;
-}
-.mspa-license-container .mspa-license-field label {
-	display: block;
-	margin-bottom: 5px;
-}
-.mspa-license-container .mspa-license-active-btn {
-	margin-top: 25px;
-}
-.mspa-license-container .mspa-license-active-btn .submit {
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
 /* sidebar */
-.mspa-add-trustpilot-review {
+.mspa-add-wordpress-review {
 	display: block;
 	padding: 10px;
 	border: 1px solid #00b67a;
@@ -275,43 +16,43 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 }
-.mspa-add-trustpilot-review:hover {
+.mspa-add-wordpress-review:hover {
 	color: #111111;
 }
-.mspa-add-trustpilot-review img {
+.mspa-add-wordpress-review img {
 	height: 20px;
 }
 
 /* plugin specific */
 div#product_addon_sections_product_data {
-    padding: 20px;
+	padding: 20px;
 }
-div#product_addon_sections_product_data .mspa-accordion-title {
-    padding: 10px;
-    margin: 0 0 15px;
+div#product_addon_sections_product_data .mswa-accordion-title {
+	padding: 10px;
+	margin: 0 0 15px;
 	cursor: pointer;
 }
-div#product_addon_sections_product_data .mspa-accordion-content {
-    margin-bottom: 30px;
+div#product_addon_sections_product_data .mswa-accordion-content {
+	margin-bottom: 30px;
 }
-.mspa-accordion-title {
-    cursor: pointer;
-    margin: 0;
-    padding: 10px;
-    background-color: #333333;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    max-width: 500px;
+.mswa-accordion-title {
+	cursor: pointer;
+	margin: 0;
+	padding: 10px;
+	background-color: #333333;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	max-width: 500px;
 	position: relative;
 }
-.mspa-accordion-title .toggle-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
+.mswa-accordion-title .toggle-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
 }
-.mspa-accordion-content.mspa-accordion-closed {
-    display: none;
+.mswa-accordion-content.mswa-accordion-closed {
+	display: none;
 }
 
 @media all and (max-width: 768px) {

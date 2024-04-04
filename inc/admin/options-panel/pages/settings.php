@@ -59,7 +59,7 @@ $add_review_check   = $mspa_enable_product_addon == '1' ? 'checked' : '';
                                             </label>
                                         </th>
                                         <td>
-                                            <fieldset class="mspa-repeater">
+                                            <fieldset class="mswa-repeater">
                                                 <legend class="screen-reader-text">
                                                     <span><?php esc_html_e('Product Addon Sections', 'msp-addons'); ?></span>
                                                 </legend>
@@ -70,32 +70,32 @@ $add_review_check   = $mspa_enable_product_addon == '1' ? 'checked' : '';
                                                     if ($total_sections > 0) {
                                                         foreach ($product_addon_sections as $section) {
                                                     ?>
-                                                        <h3 class='mspa-accordion-title'>
+                                                        <h3 class='mswa-accordion-title'>
                                                             <?php echo esc_html($section['product_addon_section_name']); ?>
                                                             <span class="dashicons dashicons-arrow-down-alt2 toggle-icon"></span>
                                                         </h3>
-                                                        <div class='mspa-accordion-content mspa-accordion-closed'>
+                                                        <div class='mswa-accordion-content mswa-accordion-closed'>
                                                             <div data-repeater-item>
-                                                                <div class="mspa-repeater-field-item-container">
+                                                                <div class="mswa-repeater-field-item-container">
                                                                     <label for="product_addon_section_id">
-                                                                        <h4 class="msbr-label-heading">
+                                                                        <h4 class="mswa-label-heading">
                                                                             <?php esc_html_e('Unique ID', 'msp-addons'); ?>
                                                                         </h4>
                                                                     </label>
                                                                     <input type="text" class="product-addon-section-id-input" name="product_addon_section_id" placeholder="Add an unique ID for the section" value="<?php echo esc_attr($section['product_addon_section_id']); ?>" required />
-                                                                    <div class="msbr-field-description">
+                                                                    <div class="mswa-field-description">
                                                                         <?php esc_html_e('This is a unique ID for this section.', 'msp-addons'); ?>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="mspa-repeater-field-item-container">
+                                                                <div class="mswa-repeater-field-item-container">
                                                                     <label for="product_addon_section_name">
-                                                                        <h4 class="msbr-label-heading">
+                                                                        <h4 class="mswa-label-heading">
                                                                             <?php esc_html_e('Section Name', 'msp-addons'); ?>
                                                                         </h4>
                                                                     </label>
                                                                     <input type="text" class="product-addon-section-name-input" name="product_addon_section_name" placeholder="Add a name for the section" value="<?php echo esc_attr($section['product_addon_section_name']); ?>" required />
-                                                                    <div class="msbr-field-description">
+                                                                    <div class="mswa-field-description">
                                                                         <?php esc_html_e('Add a name to the section.', 'msp-addons'); ?>
                                                                     </div>
                                                                 </div>
