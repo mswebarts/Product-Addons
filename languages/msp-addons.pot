@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.7; wp-6.5\n"
-"X-Domain: msp-addons"
+"X-Domain: simple-product-addons"
 
 #: inc/admin/options-panel/pages/overview-sidebar.php:7
 msgid "5 star rating"
@@ -62,7 +62,7 @@ msgid "https://www.mswebarts.com/"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://www.mswebarts.com/products/msp-addons/"
+msgid "https://www.mswebarts.com/products/simple-product-addons/"
 msgstr ""
 
 #: inc/admin/options-panel/pages/overview-content.php:6

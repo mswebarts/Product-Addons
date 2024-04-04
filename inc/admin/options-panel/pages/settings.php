@@ -1,10 +1,10 @@
 <?php
-$general_tab      = menu_page_url( 'msp-addons', false );
+$general_tab      = menu_page_url( 'simple-product-addons', false );
 $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 ?>
 <div id="icon-options-general" class="icon32"></div>
-<h1><?php echo esc_html_e( 'MS Product Addons for WC', 'msp-addons' ); ?></h1>
-<p><?php echo esc_html_e( 'Let customers choose product addons while buying for WooCommerce websites.', 'msp-addons' ); ?></p>
+<h1><?php echo esc_html_e( 'MS Product Addons for WC', 'simple-product-addons' ); ?></h1>
+<p><?php echo esc_html_e( 'Let customers choose product addons while buying for WooCommerce websites.', 'simple-product-addons' ); ?></p>
 
 <div class="wrap mswa-settings-page">
 
@@ -17,7 +17,7 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 
 				<h2 class="nav-tab-wrapper">
 					<a href="<?php echo esc_attr( esc_url( $general_tab ) ); ?>" class="nav-tab nav-tab-active">
-						<?php echo esc_html_e( 'General', 'msp-addons' ); ?>
+						<?php echo esc_html_e( 'General', 'simple-product-addons' ); ?>
 					</a>
 				</h2>
 
@@ -27,9 +27,9 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 						<div class="mswa-section-wrapper">
 							<div class="mswa-section">
 								<div class="mswa-section-heading">
-									<h2><?php echo esc_html_e( 'General Settings', 'msp-addons' ); ?></h2>
+									<h2><?php echo esc_html_e( 'General Settings', 'simple-product-addons' ); ?></h2>
 									<p>
-										<?php echo esc_html_e( 'Configure the general settings for product addons.', 'msp-addons' ); ?>
+										<?php echo esc_html_e( 'Configure the general settings for product addons.', 'simple-product-addons' ); ?>
 									</p>
 								</div>
 
@@ -37,16 +37,16 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 									<tr>
 										<th>
 											<label for="mspa_enable_product_addon">
-												<?php esc_html_e( 'Enable Product Addons', 'msp-addons' ); ?>
+												<?php esc_html_e( 'Enable Product Addons', 'simple-product-addons' ); ?>
 										</th>
 										</label>
 										<td>
 											<fieldset>
 												<legend class="screen-reader-text">
-													<span><?php esc_html_e( 'Enable Product Addons', 'msp-addons' ); ?></span>
+													<span><?php esc_html_e( 'Enable Product Addons', 'simple-product-addons' ); ?></span>
 												</legend>
 												<input name="mspa_enable_product_addon" type="checkbox" id="mspa_enable_product_addon" value="<?php echo esc_attr( '1' ); ?>" <?php echo esc_attr( $add_review_check ); ?> />
-												<span><?php esc_html_e( 'Check to display the Add Review form in product pages.', 'msp-addons' ); ?></span>
+												<span><?php esc_html_e( 'Check to display the Add Review form in product pages.', 'simple-product-addons' ); ?></span>
 											</fieldset>
 										</td>
 									</tr>
@@ -55,13 +55,13 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 									<tr>
 										<th>
 											<label for="product_addon_sections">
-												<?php esc_html_e( 'Product Addon Sections', 'msp-addons' ); ?>
+												<?php esc_html_e( 'Product Addon Sections', 'simple-product-addons' ); ?>
 											</label>
 										</th>
 										<td>
 											<fieldset class="mswa-repeater">
 												<legend class="screen-reader-text">
-													<span><?php esc_html_e( 'Product Addon Sections', 'msp-addons' ); ?></span>
+													<span><?php esc_html_e( 'Product Addon Sections', 'simple-product-addons' ); ?></span>
 												</legend>
 												<div data-repeater-list="product_addon_sections">
 													<?php
@@ -79,24 +79,24 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 																<div class="mswa-repeater-field-item-container">
 																	<label for="product_addon_section_id">
 																		<h4 class="mswa-label-heading">
-																			<?php esc_html_e( 'Unique ID', 'msp-addons' ); ?>
+																			<?php esc_html_e( 'Unique ID', 'simple-product-addons' ); ?>
 																		</h4>
 																	</label>
 																	<input type="text" class="product-addon-section-id-input" name="product_addon_section_id" placeholder="Add an unique ID for the section" value="<?php echo esc_attr( $section['product_addon_section_id'] ); ?>" required />
 																	<div class="mswa-field-description">
-																		<?php esc_html_e( 'This is a unique ID for this section.', 'msp-addons' ); ?>
+																		<?php esc_html_e( 'This is a unique ID for this section.', 'simple-product-addons' ); ?>
 																	</div>
 																</div>
 
 																<div class="mswa-repeater-field-item-container">
 																	<label for="product_addon_section_name">
 																		<h4 class="mswa-label-heading">
-																			<?php esc_html_e( 'Section Name', 'msp-addons' ); ?>
+																			<?php esc_html_e( 'Section Name', 'simple-product-addons' ); ?>
 																		</h4>
 																	</label>
 																	<input type="text" class="product-addon-section-name-input" name="product_addon_section_name" placeholder="Add a name for the section" value="<?php echo esc_attr( $section['product_addon_section_name'] ); ?>" required />
 																	<div class="mswa-field-description">
-																		<?php esc_html_e( 'Add a name to the section.', 'msp-addons' ); ?>
+																		<?php esc_html_e( 'Add a name to the section.', 'simple-product-addons' ); ?>
 																	</div>
 																</div>
 
@@ -126,7 +126,7 @@ $add_review_check = '1' == $mspa_enable_product_addon ? 'checked' : '';
 						</div>
 						
 						<?php wp_nonce_field( 'mspa_general_form_action', 'mspa_general_form_nonce' ); ?>
-						<input class="button-primary" type="submit" value="<?php esc_html_e( 'Save Settings', 'msp-addons' ); ?>" />
+						<input class="button-primary" type="submit" value="<?php esc_html_e( 'Save Settings', 'simple-product-addons' ); ?>" />
 
 						<br class="clear" />
 					</form>

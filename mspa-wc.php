@@ -12,7 +12,7 @@
  * Tested up to: 6.2
  * Requires at least: 5.5
  * Requires PHP: 7.4
- * Text Domain: msp-addons
+ * Text Domain: simple-product-addons
  * Domain Path: /languages
  */
 
@@ -74,7 +74,7 @@ class MSP_Addons_Lite {
 
 	public function mspa_woocommerce_dependency_error() {
 		$class   = 'notice notice-error';
-		$message = __( 'You must need to install and activate woocommerce for Product Addons to work', 'msp-addons' );
+		$message = __( 'You must need to install and activate woocommerce for Product Addons to work', 'simple-product-addons' );
 
 		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );
 	}
@@ -129,7 +129,7 @@ class MSP_Addons_Lite {
 			'Product Addons Settings',
 			'Product Addons',
 			'manage_options',
-			'msp-addons',
+			'simple-product-addons',
 			'mspa_settings',
 			10
 		);
@@ -164,7 +164,7 @@ class MSP_Addons_Lite {
 
 	// load translations.
 	public function mspa_load_textdomain() {
-		load_plugin_textdomain( 'msp-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'simple-product-addons', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 }
 
