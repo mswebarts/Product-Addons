@@ -57,7 +57,7 @@ function mspa_display_product_addon_sections() {
 												<td>
 													<?php
 													echo wp_kses(
-														wc_price( $item['price'] ),
+														'+' . wc_price( $item['price'] ),
 														array(
 															'span' => array( 'class' => array() ),
 														)
