@@ -189,6 +189,23 @@ function mspa_display_selected_addons_in_order( $item_id, $item ) {
 	}
 }
 
+// display the selected addons in the order details in admin panel
+add_action( 'woocommerce_after_order_itemmeta', 'mspa_display_selected_addons_in_order_admin', 10, 3 );
+function mspa_display_selected_addons_in_order_admin( $item_id, $item, $product ) {
+    if ( ! empty( $item['addons'] ) ) {
+        // Group the addons by their section.
+        $addons_by_section = array();
+        foreach ( $item['addons'] as $addon ) {
+            $addons_by_section[ sanitize_text_field( $addon['section'] ) ][] = wc_clean( ltrim( $addon['name'], 'addon-' ) );
+        }
+
+        // Add the addons to the order item meta.
+        foreach ( $addons_by_section as $section => $addons ) {
+            echo '<div><strong>' . esc_html( $section ) . ':</strong> ' . wp_kses( implode( ', ', $addons ), array() ) . '</div>';
+        }
+    }
+}
+
 // Add the selected addons to the cart item price.
 add_action( 'woocommerce_before_calculate_totals', 'mspa_add_addons_price_to_cart', 10, 1 );
 function mspa_add_addons_price_to_cart( $cart ) {
