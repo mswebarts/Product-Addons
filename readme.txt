@@ -48,4 +48,3 @@ Pro Tip: If you see any PHP warning in your site's frontend, just go to MS Web A
 5. Then go to WordPress admin dashboard -> Plugins -> Installed Plugins -> Then activate Product Addons
 
 Hope the installation process was as smooth as the plugin works!
-
