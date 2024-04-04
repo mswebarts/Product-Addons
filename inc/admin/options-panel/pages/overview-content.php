@@ -7,11 +7,10 @@
 		<hr>
 		<div class="msbr-column-content">
 			<ul>
-				<li><a href="https://www.mswebarts.com/products/breview/" target="_blank"><?php esc_html_e( 'Plugin Homepage', 'msp-addons' ); ?></a></li>
-				<li><a href="https://www.mswebarts.com/documentation/" target="_blank"><?php esc_html_e( 'Documentation', 'msp-addons' ); ?></a></li>
-				<li><a href="https://wordpress.org/support/plugin/breview/" target="_blank"><?php esc_html_e( 'Support', 'msp-addons' ); ?></a></li>
-				<li><a href="https://wordpress.org/plugins/breview/#faq" target="_blank"><?php esc_html_e( 'FAQ', 'msp-addons' ); ?></a></li>
-				<li><a href="https://wordpress.org/plugins/breview/#developers" target="_blank"><?php esc_html_e( 'Changelog', 'msp-addons' ); ?></a></li>
+				<li><a href="https://wordpress.org/plugins/ms-product-addons/" target="_blank"><?php esc_html_e( 'Plugin Homepage', 'msp-addons' ); ?></a></li>
+				<li><a href="https://wordpress.org/support/plugin/ms-product-addons/" target="_blank"><?php esc_html_e( 'Support', 'msp-addons' ); ?></a></li>
+				<li><a href="https://wordpress.org/plugins/ms-product-addons/#faq" target="_blank"><?php esc_html_e( 'FAQ', 'msp-addons' ); ?></a></li>
+				<li><a href="https://wordpress.org/plugins/ms-product-addons/#developers" target="_blank"><?php esc_html_e( 'Changelog', 'msp-addons' ); ?></a></li>
 			</ul>
 		</div>
 	</div>
