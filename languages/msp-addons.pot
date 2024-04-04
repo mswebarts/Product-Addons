@@ -1,0 +1,164 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MS Product Addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-04 10:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5\n"
+"X-Domain: msp-addons"
+
+#: inc/admin/options-panel/pages/overview-sidebar.php:7
+msgid "5 star rating"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:99
+msgid "Add a name to the section."
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:13
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:49
+msgid "Check to display the Add Review form in product pages."
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:32
+msgid "Configure the general settings for product addons."
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:40
+#: inc/admin/options-panel/pages/settings.php:46
+msgid "Enable Product Addons"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-sidebar.php:5
+msgid "Enjoying Product Addons?"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:12
+msgid "FAQ"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:20
+msgid "General"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:30
+msgid "General Settings"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.mswebarts.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.mswebarts.com/products/msp-addons/"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:6
+msgid "Important Links"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-sidebar.php:9
+msgid "Leave us a 5 star review on WordPress and help spread the word!"
+msgstr ""
+
+#. Description of the plugin
+#: inc/admin/options-panel/pages/settings.php:7
+msgid ""
+"Let customers choose product addons while buying for WooCommerce websites."
+msgstr ""
+
+#. Name of the plugin
+msgid "MS Product Addons"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:6
+msgid "MS Product Addons for WC"
+msgstr ""
+
+#. Author of the plugin
+msgid "MS Web Arts"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview.php:5
+msgid "MS Web Arts logo"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview.php:6
+msgid "MS Web Arts Overview"
+msgstr ""
+
+#: inc/functions/product-settings.php:55
+msgid "Name"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:10
+msgid "Plugin Homepage"
+msgstr ""
+
+#: inc/functions/product-settings.php:59
+msgid "Price"
+msgstr ""
+
+#: inc/functions/product-settings.php:6
+msgid "Product Addon"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:58
+#: inc/admin/options-panel/pages/settings.php:64
+msgid "Product Addon Sections"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:2
+msgid "Product Addons Info"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-sidebar.php:11
+msgid "Review Us on"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:129
+msgid "Save Settings"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:94
+msgid "Section Name"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-content.php:11
+msgid "Support"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:87
+msgid "This is a unique ID for this section."
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview.php:8
+msgid ""
+"This page contains the license activations for plugins provided by MS Web "
+"Arts and latest news/updates from us"
+msgstr ""
+
+#: inc/admin/options-panel/pages/settings.php:82
+msgid "Unique ID"
+msgstr ""
+
+#: inc/admin/options-panel/pages/overview-sidebar.php:12
+msgid "WordPress Logo"
+msgstr ""
+
+#: mspa-wc.php:54
+msgid ""
+"You must need to install and activate woocommerce for Product Addons to work"
+msgstr ""
