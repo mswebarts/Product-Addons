@@ -3,8 +3,8 @@
 /**
  * Plugin Name: Simple Product Addons for WooCommerce
  * Description: Let customers choose product addons while buying for WooCommerce websites.
- * Version: 1.
- * Plugin URI: https://www.mswebarts.com/products/msp-addons/
+ * Version: 1.0
+ * Plugin URI: https://wordpress.org/plugins/simple-product-addons/
  * Author: MS Web Arts
  * Author URI: https://www.mswebarts.com/
  * License: GPL v2 or later
