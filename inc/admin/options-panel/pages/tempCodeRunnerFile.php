@@ -1,2 +1,0 @@
-<?php
-'msp-addo
