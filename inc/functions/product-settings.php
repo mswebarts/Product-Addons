@@ -79,6 +79,8 @@ function mspa_product_addon_sections_product_data_content() {
 		<?php wp_nonce_field( 'mspa_product_addon_sections_product_data', 'mspa_product_addon_sections_product_data_nonce' ); ?>
 	</div>
 	<?php
+
+	wp_enqueue_script( 'mspa-admin-script' );
 }
 
 // Save the data from the product addon tab.
