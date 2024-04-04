@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name: Simple Product Addons for WooCommerce
  * Description: Let customers choose product addons while buying for WooCommerce websites.
