@@ -1,5 +1,5 @@
 <div class="mswa-row-col">
-	<h1 class="mswa-title"><?php echo esc_html_e( 'Product Addons Info', 'simple-product-addons' ); ?></h1>
+	<h1 class="mswa-title"><?php echo esc_html_e( 'Simple Product Addons Info', 'simple-product-addons' ); ?></h1>
 </div>
 <div class="mswa-col-3">
 	<div class="mswa-box">
