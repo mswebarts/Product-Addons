@@ -27,14 +27,6 @@ $mspa_options = array();
 class MSP_Addons_Lite {
 	public function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'mspa_on_plugin_load' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_styles' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_scripts' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_styles' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_js' ) );
-		add_action( 'init', array( $this, 'mspa_load_textdomain' ) );
-		add_action( 'admin_menu', array( $this, 'mspa_add_menu_page' ), 999999 );
-		add_action( 'mswa_overview_content', array( $this, 'mspa_overview_content' ), 10 );
-		add_action( 'mswa_overview_sidebar', array( $this, 'mspa_overview_sidebar' ), 10 );
 	}
 	public function mspa_on_plugin_load() {
 		global $mspa_dir;
@@ -42,10 +34,19 @@ class MSP_Addons_Lite {
 		if ( ! defined( 'WC_VERSION' ) ) {
 			add_action( 'admin_notices', array( $this, 'mspa_woocommerce_dependency_error' ) );
 			return;
-		}
+		} else {
+			// include plugin files.
+			include_once $mspa_dir . 'inc/init.php';
 
-		// include plugin files.
-		include_once $mspa_dir . 'inc/init.php';
+			add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_styles' ) );
+			add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_scripts' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_styles' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_js' ) );
+			add_action( 'init', array( $this, 'mspa_load_textdomain' ) );
+			add_action( 'admin_menu', array( $this, 'mspa_add_menu_page' ), 999999 );
+			add_action( 'mswa_overview_content', array( $this, 'mspa_overview_content' ), 10 );
+			add_action( 'mswa_overview_sidebar', array( $this, 'mspa_overview_sidebar' ), 10 );
+		}
 	}
 
 	public function mspa_woocommerce_dependency_error() {
