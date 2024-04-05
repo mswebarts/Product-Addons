@@ -24,30 +24,6 @@ $mspa_dir     = plugin_dir_path( __FILE__ );
 $mspa_url     = plugins_url( '/', __FILE__ );
 $mspa_options = array();
 
-// include composer autoload.
-if ( ! class_exists( 'Composer\Autoload\ClassLoader' ) ) {
-	require $mspa_dir . '/vendor/autoload.php';
-}
-
-/**
- * Initialize the plugin tracker
- *
- * @return void
- */
-function appsero_init_tracker_simple_product_addons() {
-
-	if ( ! class_exists( 'Appsero\Client' ) ) {
-		require_once __DIR__ . '/vendor/appsero/client/src/Client.php';
-	}
-
-	$client = new Appsero\Client( 'd29de200-c235-44af-9464-b98213ca8c29', 'Simple Product Addons for WooCommerce', __FILE__ );
-
-	// Active insights
-	$client->insights()->init();
-}
-
-appsero_init_tracker_simple_product_addons();
-
 class MSP_Addons_Lite {
 	public function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'mspa_on_plugin_load' ) );
