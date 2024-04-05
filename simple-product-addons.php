@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Simple Product Addons for WooCommerce
- * Description: Let customers choose product addons while buying for WooCommerce websites.
+ * Description: Let your customers choose product addons while adding product to cart in your WooCommerce website.
  * Version: 1.0.1
  * Plugin URI: https://wordpress.org/plugins/simple-product-addons/
  * Author: MS Web Arts
