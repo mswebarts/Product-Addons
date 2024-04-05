@@ -1,7 +1,7 @@
 <div class="mswa-row-col">
 	<h1 class="mswa-title"><?php echo esc_html_e( 'Product Addons Info', 'simple-product-addons' ); ?></h1>
 </div>
-<div class="mswa-col-4">
+<div class="mswa-col-3">
 	<div class="mswa-box">
 		<h3 class="mswa-column-title"><i class="dashicons-before dashicons-admin-links"></i> <?php esc_html_e( 'Important Links', 'simple-product-addons' ); ?> </h3>
 		<hr>

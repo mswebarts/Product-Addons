@@ -2,7 +2,7 @@
 <div class="postbox">
 	<div class="inside">
 		<div class="mspa-box">
-			<h3><?php echo esc_html_e( 'Enjoying Product Addons?', 'simple-product-addons' ); ?></h3>
+			<h3><?php echo esc_html_e( 'Enjoying Simple Product Addons?', 'simple-product-addons' ); ?></h3>
 			<div>
 				<img src="<?php echo esc_url( $mspa_url . 'inc/admin/assets/images/rating.jpg' ); ?>" alt="<?php echo esc_attr_e( '5 star rating', 'simple-product-addons' ); ?>">
 				<div>
