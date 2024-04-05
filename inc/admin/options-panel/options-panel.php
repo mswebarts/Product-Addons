@@ -1,8 +1,4 @@
 <?php
-function mspa_overview_page() {
-	global $mspa_dir;
-	include_once $mspa_dir . 'inc/admin/options-panel/pages/overview.php';
-}
 function mspa_settings() {
 	global $mspa_dir, $mspa_options;
 

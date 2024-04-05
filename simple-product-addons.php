@@ -29,12 +29,12 @@ class MSP_Addons_Lite {
 		add_action( 'plugins_loaded', array( $this, 'mspa_on_plugin_load' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'mspa_register_scripts' ) );
-		add_action( 'admin_menu', array( $this, 'mspa_add_menu_page' ) );
-		add_action( 'mswa_overview_content', array( $this, 'mspa_overview_content' ), 10 );
-		add_action( 'mswa_overview_sidebar', array( $this, 'mspa_overview_sidebar' ), 10 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_styles' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'mspa_admin_js' ) );
 		add_action( 'init', array( $this, 'mspa_load_textdomain' ) );
+		add_action( 'admin_menu', array( $this, 'mspa_add_menu_page' ), 999999 );
+		add_action( 'mswa_overview_content', array( $this, 'mspa_overview_content' ), 10 );
+		add_action( 'mswa_overview_sidebar', array( $this, 'mspa_overview_sidebar' ), 10 );
 	}
 	public function mspa_on_plugin_load() {
 		global $mspa_dir;
@@ -94,7 +94,7 @@ class MSP_Addons_Lite {
 				'MS Web Arts',
 				'manage_options',
 				'mswebarts-overview',
-				'mspa_overview_page',
+				array( $this, 'mspa_overview_page' ),
 				$mspa_url . 'inc/admin/assets/images/icon.png',
 				100
 			);
@@ -109,6 +109,11 @@ class MSP_Addons_Lite {
 			'mspa_settings',
 			10
 		);
+	}
+
+	public function mspa_overview_page() {
+		global $mspa_dir, $mspa_url;
+		include_once $mspa_dir . 'inc/admin/options-panel/pages/overview.php';
 	}
 
 	public function mspa_overview_content() {

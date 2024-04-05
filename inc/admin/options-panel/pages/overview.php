@@ -1,6 +1,3 @@
-<?php
-global $mspa_url;
-?>
 <h1 class="mswa-admin-options-page-title">
 	<img src="<?php echo esc_url( $mspa_url . 'inc/admin/assets/images/logo.png' ); ?>" alt="<?php echo esc_attr_e('MS Web Arts logo', 'simple-product-addons') ?>">
 	<span><?php echo esc_html_e( 'MS Web Arts Overview', 'simple-product-addons' ); ?></span>
