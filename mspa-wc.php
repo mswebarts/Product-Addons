@@ -2,14 +2,14 @@
 /**
  * Plugin Name: Simple Product Addons for WooCommerce
  * Description: Let customers choose product addons while buying for WooCommerce websites.
- * Version: 1.0
+ * Version: 1.0.1
  * Plugin URI: https://wordpress.org/plugins/simple-product-addons/
  * Author: MS Web Arts
  * Author URI: https://www.mswebarts.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Tested up to: 6.2
- * Requires at least: 5.5
+ * Tested up to: 6.5
+ * Requires at least: 5.6
  * Requires PHP: 7.4
  * Text Domain: simple-product-addons
  * Domain Path: /languages
